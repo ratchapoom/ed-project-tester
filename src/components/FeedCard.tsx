@@ -11,60 +11,64 @@ import {
   IconButton,
   Image,
   Button,
+  Center,
 } from "@chakra-ui/react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { BiLike, BiShare, BiChat } from "react-icons/bi";
 
 const FeedCard = () => {
   return (
-    <Card maxW="md" margin={3}>
-      <CardHeader>
-        <Flex>
-          <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-            <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
+    <Center>
+      <Card maxW="1080px" margin={3}>
+        <CardHeader margin={-2}>
+          <Flex>
+            <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
+              <Avatar name="LETMETAKE" src="https://bit.ly/kent-c-dodds" />
 
-            <Box>
-              <Heading size="sm">Segun Adebayo</Heading>
-              <Text>Creator, Chakra UI</Text>
-            </Box>
+              <Box>
+                <Heading size="sm">LETMETAKE</Heading>
+                <Text>นักเย่อ, ในป่าและบนภูเขา</Text>
+              </Box>
+            </Flex>
+            <IconButton
+              variant="ghost"
+              colorScheme="gray"
+              aria-label="See menu"
+              icon={<BsThreeDotsVertical />}
+            />
           </Flex>
-          <IconButton
-            variant="ghost"
-            colorScheme="gray"
-            aria-label="See menu"
-            icon={<BsThreeDotsVertical />}
-          />
-        </Flex>
-      </CardHeader>
-      <CardBody margin={-3}>
-        <Text>Your Caption </Text>
-      </CardBody>
-      <Image
-        objectFit="cover"
-        src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        alt="Chakra UI"
-      />
+        </CardHeader>
+        <CardBody margin={-3}>
+          <Text>เย่อวันละ 3 ครั้งหลังอาหาร </Text>
+        </CardBody>
+        <Image
+          objectFit="cover"
+          src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/412104729_932561871561660_8643995401076808754_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeH2gmvAomEpyBDWC0ieyzg08JdPa9ArjNjwl09r0CuM2Mpy6M40aGTmVvUfIF5P2Q0&_nc_ohc=GfzHJtiYUx4AX_fmPlp&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfD5oxaNDnt1YOKhyAIWufQrJQGc5i5ypn-kxofMVNBO4w&oe=6583A2EA"
+          alt="Chakra UI"
+          h="auto"
+          w="100%"
+        />
 
-      <CardFooter
-        justify="space-between"
-        flexWrap="wrap"
-        sx={{
-          "& > button": {
-            minW: "136px",
-          },
-        }}
-      >
-        <Button flex="1" variant="ghost" leftIcon={<BiLike />}>
-          Like
-        </Button>
-        <Button flex="1" variant="ghost" leftIcon={<BiChat />}>
-          Comment
-        </Button>
-        <Button flex="1" variant="ghost" leftIcon={<BiShare />}>
-          Share
-        </Button>
-      </CardFooter>
-    </Card>
+        <CardFooter
+          justify="space-between"
+          flexWrap="wrap"
+          margin={-3}
+          sx={{
+            "& > button": {
+              minW: "136px",
+            },
+          }}
+        >
+          <Button
+            bgGradient="linear(to-r, #FE53BB, #09FBD3)"
+            type="submit"
+            width="100%"
+          >
+            ส่องเฟส/ไอจี
+          </Button>
+        </CardFooter>
+      </Card>
+    </Center>
   );
 };
 

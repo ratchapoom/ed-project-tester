@@ -14,7 +14,7 @@ const Leader = () => {
   return (
     <Card
       direction={{ lg: "row", base: "row" }}
-      maxHeight={{ base: "150px", lg: "250px" }}
+      maxHeight={{ base: "150px", lg: "150px" }}
       boxShadow="xl"
       className={styles.block}
     >

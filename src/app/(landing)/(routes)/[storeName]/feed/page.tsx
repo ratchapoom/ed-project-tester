@@ -1,7 +1,15 @@
+import FeedCard from "@/components/FeedCard";
+
 const StoreFeedPage = () => {
-    return (
-        <div>Store Feed Page</div>
-    );
-}
+  return (
+    <>
+      <FeedCard />
+      <FeedCard />
+      <FeedCard />
+      <FeedCard />
+      <FeedCard />
+    </>
+  );
+};
 
 export default StoreFeedPage;

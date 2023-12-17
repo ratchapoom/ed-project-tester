@@ -22,7 +22,7 @@ const ImageSlider = ({ slides }: Props) => {
           return (
             <Image
               src={slide.image}
-              height="200px"
+              height={{ base: "200px", md: "400px" }}
               width="800px"
               objectFit="cover"
               key={slide.image}

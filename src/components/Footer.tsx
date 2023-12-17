@@ -17,6 +17,7 @@ const Footer = () => {
       position="fixed"
       left="0"
       bottom={0}
+      marginTop={10}
       width="100%"
       height="60px"
       marginBottom={3}
