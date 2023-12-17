@@ -1,17 +1,16 @@
 "use client";
 
+import NextLink from "next/link";
+import { MdAddAPhoto } from "react-icons/md";
+
 import {
-  Image,
   Box,
-  Flex,
   Center,
   Heading,
   Text,
   Icon,
+  Link
 } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/react";
-import NextLink from "next/link";
-import { MdAddAPhoto } from "react-icons/md";
 
 const PostCard = () => {
   return (

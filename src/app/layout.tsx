@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import LoadingBarProvider from '@/providers/loading-bar-provider';
 import { UiProviders } from '@/providers/ui-providers'
 import { ColorModeScript } from '@chakra-ui/react'
 import theme from '@/theme'
@@ -19,7 +20,9 @@ export default function RootLayout({
       <body>
         <UiProviders>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-          {children}
+          <LoadingBarProvider>
+            {children}
+          </LoadingBarProvider>
         </UiProviders>
       </body>
     </html>
